@@ -14,10 +14,6 @@ router.get('/list', function (req, res, next) {
         }
         author = req.session.username;
     }
-    // const loginCheckResult = loginCheck(req);
-    // if (loginCheckResult) {
-    //     return loginCheckResult
-    // }
     const result = getList(author, keyword);
     return result.then(listData => {
         res.json(new SuccessModel(listData));

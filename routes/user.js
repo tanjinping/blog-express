@@ -1,4 +1,4 @@
-import {ErrorModel, SuccessModel} from "../model/resModel";
+const {ErrorModel, SuccessModel} = require("../model/resModel");
 
 const {login} = require("../controller/user");
 
